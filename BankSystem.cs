@@ -3,7 +3,7 @@ namespace BankAccountTask
     class BankSystem {
         private static List<Account> accountList = new List<Account>();
 
-        public static Account FindAccount(int accountNumber) {
+        private static Account FindAccount(int accountNumber) {
 
             foreach (Account account in accountList) {
                 if (account.accNumber == accountNumber) {
@@ -46,7 +46,7 @@ namespace BankAccountTask
             return false;
         }
 
-        internal static void ViewAccount()
+        public static void ViewAccount()
         {
             
             int accountNumber = RequestAccNumber();
@@ -57,7 +57,7 @@ namespace BankAccountTask
             }    
         }
 
-        internal static void MakeDeposit()
+        public static void MakeDeposit()
         {
             int accountNumber = RequestAccNumber();
             decimal amount = RequestAmount();
@@ -75,7 +75,7 @@ namespace BankAccountTask
             
         }
 
-        internal static void MakeWithdrawal()
+        public static void MakeWithdrawal()
         {
             int accountNumber = RequestAccNumber();
             decimal amount = RequestAmount();
