@@ -1,2 +1,2 @@
-# BankingApp
-A simple banking app in c#
+# BankAccountTask
+Simplified Personal and Business Banking

@@ -1,0 +1,15 @@
+/home/mandy/Desktop/BankAccountTask/bin/Debug/net7.0/BankAccountTask
+/home/mandy/Desktop/BankAccountTask/bin/Debug/net7.0/BankAccountTask.deps.json
+/home/mandy/Desktop/BankAccountTask/bin/Debug/net7.0/BankAccountTask.runtimeconfig.json
+/home/mandy/Desktop/BankAccountTask/bin/Debug/net7.0/BankAccountTask.dll
+/home/mandy/Desktop/BankAccountTask/bin/Debug/net7.0/BankAccountTask.pdb
+/home/mandy/Desktop/BankAccountTask/obj/Debug/net7.0/BankAccountTask.csproj.AssemblyReference.cache
+/home/mandy/Desktop/BankAccountTask/obj/Debug/net7.0/BankAccountTask.GeneratedMSBuildEditorConfig.editorconfig
+/home/mandy/Desktop/BankAccountTask/obj/Debug/net7.0/BankAccountTask.AssemblyInfoInputs.cache
+/home/mandy/Desktop/BankAccountTask/obj/Debug/net7.0/BankAccountTask.AssemblyInfo.cs
+/home/mandy/Desktop/BankAccountTask/obj/Debug/net7.0/BankAccountTask.csproj.CoreCompileInputs.cache
+/home/mandy/Desktop/BankAccountTask/obj/Debug/net7.0/BankAccountTask.dll
+/home/mandy/Desktop/BankAccountTask/obj/Debug/net7.0/refint/BankAccountTask.dll
+/home/mandy/Desktop/BankAccountTask/obj/Debug/net7.0/BankAccountTask.pdb
+/home/mandy/Desktop/BankAccountTask/obj/Debug/net7.0/BankAccountTask.genruntimeconfig.cache
+/home/mandy/Desktop/BankAccountTask/obj/Debug/net7.0/ref/BankAccountTask.dll
