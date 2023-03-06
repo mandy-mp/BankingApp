@@ -1,10 +1,16 @@
 namespace BankAccountTask
 {
-    class BankSystem {
-        private static List<Account> accountList = new List<Account>();
+    public class bankSystem 
+    {
+        private List<Account> accountList;
 
-        private static Account FindAccount(int accountNumber) {
+        public bankSystem () 
+        {
+            accountList = new List<Account>();
+        }
 
+        private Account FindAccount(int accountNumber) 
+        {
             foreach (Account account in accountList) {
                 if (account.accNumber == accountNumber) {
                     return account;
@@ -13,9 +19,8 @@ namespace BankAccountTask
             return null;
         }
 
-        public static void AddAccount() {
-
-
+        public void AddAccount() 
+        {
             int accountNumber = RequestAccNumber();
             decimal initialDeposit = RequestAmount();
 
@@ -28,16 +33,17 @@ namespace BankAccountTask
             }
         }
 
-        public static void ViewAllAccounts() {
+        public void ViewAllAccounts() 
+        {
             if (accountList.Count != 0) {
                 foreach (Account account in accountList) {
                     Console.WriteLine(account.ToString());
                 }
             }else Console.WriteLine("No Account Data Available");
-
         }
 
-        private static bool AccountExists(int accountNumber) {
+        private bool AccountExists(int accountNumber) 
+        {
             foreach (Account account in accountList) {
                 if (account.accNumber == accountNumber) {
                     return true;
@@ -46,9 +52,8 @@ namespace BankAccountTask
             return false;
         }
 
-        public static void ViewAccount()
+        public void ViewAccount()
         {
-            
             int accountNumber = RequestAccNumber();
             Account account = FindAccount(accountNumber);
 
@@ -57,7 +62,7 @@ namespace BankAccountTask
             }    
         }
 
-        public static void MakeDeposit()
+        public void MakeDeposit()
         {
             int accountNumber = RequestAccNumber();
             decimal amount = RequestAmount();
@@ -75,7 +80,7 @@ namespace BankAccountTask
             
         }
 
-        public static void MakeWithdrawal()
+        public void MakeWithdrawal()
         {
             int accountNumber = RequestAccNumber();
             decimal amount = RequestAmount();
@@ -92,8 +97,8 @@ namespace BankAccountTask
             }
         }
 
-        private static int RequestAccNumber() {
-
+        private int RequestAccNumber() 
+        {
             try {
                 Console.WriteLine("Enter Account Number: ");
                 return Int32.Parse(Console.ReadLine());
@@ -102,11 +107,10 @@ namespace BankAccountTask
                 Console.WriteLine("Invalid Bank Account Number Format");
                 return -1;
             }
-
         }
 
-        private static decimal RequestAmount() {
-
+        private static decimal RequestAmount() 
+        {
             try {
                 Console.WriteLine("Enter amount to deposit: ");
                 return Decimal.Parse(Console.ReadLine());
@@ -115,8 +119,6 @@ namespace BankAccountTask
                 Console.WriteLine("Invalid Amount Format");
                 return -1;
             }
-
         }
     }
-    
 }

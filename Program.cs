@@ -5,39 +5,40 @@ internal class Program
     private static void Main(string[] args)
     {
         int runApp = 0;
+        bankSystem bankSystem = new bankSystem();
 
         Console.WriteLine("Welcome to My Banking App!");
-        do {
+        do 
+        {
             int transaction = GetUserInput();
             switch (transaction) {
-                case 1: 
-                    BankSystem.AddAccount();
+                case 1:
+                    bankSystem.AddAccount();
                     break;
                 case 2:
-                    BankSystem.ViewAccount();
+                    bankSystem.ViewAccount();
                     break;
                 case 3:
-                    BankSystem.MakeDeposit();
+                    bankSystem.MakeDeposit();
                     break;
                 case 4:
-                    BankSystem.MakeWithdrawal();
+                    bankSystem.MakeWithdrawal();
                     break;
                 case 5:
-                    BankSystem.ViewAllAccounts();
+                    bankSystem.ViewAllAccounts();
                     break;
                 case 6:
                 runApp = 6;
                     break;   
                 default:
                     break;
-
             }
-        }while (runApp != 6);
-        
+        }
+        while (runApp != 6);
     }
 
-    private static int GetUserInput() {
-
+    private static int GetUserInput()
+     {
         int transactionNumb = 0;
 
         Console.WriteLine("\nChoose a transaction from the list below: \n" +
@@ -52,19 +53,20 @@ internal class Program
 
         try {
             transactionNumb = Int32.Parse(usersChoice);
-            if (transactionNumb >= 1 && transactionNumb <= 6) {
+            if (transactionNumb >= 1 && transactionNumb <= 6) 
+            {
                 return transactionNumb;
-            }else return 0;
-
-        }catch (Exception e) {
+            }
+            else {
+                return 0;
+            }
+        }
+        catch (Exception e) 
+        {
             Console.WriteLine(e.Message);
             return 0;
         }
-
-    }
-
-
-        
+    }    
 }
 
    
